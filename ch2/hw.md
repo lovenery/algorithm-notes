@@ -24,16 +24,17 @@ return A
 ```
 
 ## (B) 分析改良氣泡排序演算法最佳、最差與平均時間複雜 度
-時間複雜度(Time Complexity)  
-#### Best Case：Ο(n)  
+
+#### 時間複雜度(Time Complexity)  
+1. Best Case：$$Ο(n)$$  
 當資料的順序恰好為由小到大時  
-第一次執行後，未進行任何swap ⇒ 提前結束
-#### Worst Case：Ο(n2)
+第一次執行後，未進行任何swap ⇒ 提前結束  
+2. Worst Case：$$Ο(n^2)$$  
 當資料的順序恰好為由大到小時  
 每回合分別執行：n-1、n-2、...、1次  
-(n-1) + (n-2) + ... + 1 = n(n-1)/2 ⇒ Ο(n2)  
-#### Average Case：Ο(n2)
-第n筆資料，平均比較(n-1)/2次
+(n-1) + (n-2) + ... + 1 = n(n-1)/2 ⇒ Ο(n^2)  
+3. Average Case：$$Ο(n^2)$$  
+第n筆資料，平均比較(n-1)/2次  
 
 
 ## (C) 使用虛擬碼描述堆積排序(heap sort)演算法
@@ -51,13 +52,15 @@ MaxHeapify(A, root, n)
         maxNode = leftChild
     end if
     if rightChild < n && A[rightChild] > A[maxNode]
-        maxNode = leftChild
+        maxNode = rightChild
     end if
     if maxNode != root
         swap(A[root], A[maxNode]);
-        heap(A, maxNode, n);
+        MaxHeapify(A, maxNode, n);
     end if
 end func
+
+MAIN
 
 for i=n/2-1 to 0
     MaxHeapify(A, i, n)
@@ -69,6 +72,9 @@ for i=n-1 to 1
 end for
 
 return A
+
+END MAIN
+
 ```
 
 
@@ -91,7 +97,7 @@ return A
 ## (E) 使用虛擬碼描述基數(radix sort)演算法
 
 ```rb
-Algorithm HeapSort(A,n)
+Algorithm RadixSort(A,n)
 Input: n個整數的array A
 Output: A (由小到大排)
 
@@ -106,7 +112,7 @@ while radix <= MAXradix
     for i=0 to n-1
         LSD = (A[i]/radix) % 10
         buckets[LSD][count[LSD]] = A[i]
-        count[LSD]++;
+        count[LSD]++
     end for
 
     radix = radix * 10
