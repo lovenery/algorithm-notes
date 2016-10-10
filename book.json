@@ -1,3 +1,22 @@
 {
-    "plugins": ["mathjax"]
+    "plugins": [
+      "mathjax-update"
+    ],
+
+    "pluginsConfig": {
+        "theme-default":{
+            "showLevel": false
+        }
+    },
+
+    "links": {
+        "sidebar": {
+            "GitHub": "https://github.com/lovenery/algorithm-notes"
+        },
+        "sharing": {
+              "facebook": false,
+              "twitter": false,
+              "all": false
+        }
+    }
 }
