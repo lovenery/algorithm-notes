@@ -159,8 +159,4 @@ n = 數列長度
 
 # Programming Problem Set 2
 ## (PA) 寫一個程式實作基數排序演算法
-[連結](/appendix/radixsort.md)
-
-# 程式作業
-
-<script src="https://gist.github.com/lovenery/b791dfe5b79e48cae14d5e831bb698c6.js"></script>
+[連結](/ch2/radixsort.html)

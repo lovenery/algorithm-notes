@@ -23,7 +23,3 @@ Print Max
 28 → 22+82= 68 → 62+82=100 → 12+02+02=1，因此28是快樂數
 
 (F) 使用虛擬瑪(pseudo code)寫一個演算法，以輸入一個具有n個元素的集合S並輸出S的幂集(pwoer set) (Write an algorithm to input a set S of n elements and output the power set of S.)
-
-# 程式作業
-
-<script src="https://gist.github.com/lovenery/0cdddd1fbe0e9599bae88cca0691e008.js"></script>
