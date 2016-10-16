@@ -8,5 +8,7 @@
     * [作業](ch2/hw.md)
     * [Heap Sort](ch2/heapsort.md)
     * [Radix Sort](ch2/radixsort.md)
+* [分治(divide-and-conquer)](ch3/3-divide-and-conquer.md)
+    * [作業](ch3/hw.md)
 * [附錄](appendix/appendix.md)
     * [C++ vector](appendix/vector.md)
